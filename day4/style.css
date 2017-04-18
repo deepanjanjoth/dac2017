@@ -1,0 +1,30 @@
+.regdiv{
+    background: #2196F3;
+    height: 80%;
+    width: 60%;
+    margin: auto;
+}
+
+.row{
+    margin-left: 25%;
+    /* margin-top: 3px; */
+    padding-top: 15px;
+}
+
+.my-input {
+    width: 150px;
+    border-radius: 6px;
+    height: 30px;
+}
+
+.my-color {
+    color:white;
+}
+
+.my-btn{
+    background: #2196F3;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+}
