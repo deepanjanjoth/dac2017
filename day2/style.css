@@ -1,0 +1,37 @@
+div.external{
+    border: 10px solid #FF9800;
+    background-color: #FFC107;
+    height: 50%;
+}
+
+
+
+#gallery{
+    border: 10px solid #CDDC39;
+    margin: auto;
+    width: 75%;
+}
+
+.divImageChild {
+    border: 2px solid blue;
+    width: 32%;
+    display: inline-block;
+    border-radius: 6px;
+}
+
+.buttonParent {
+    
+    margin: auto;
+    width: 50%;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+.buttonStyle {
+    background-color: #9C27B0;
+    color: white;
+}
+
+.imageHead {
+    color: slategrey;
+}
