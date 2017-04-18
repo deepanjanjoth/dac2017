@@ -28,3 +28,8 @@
     height: 30px;
     width: 100px;
 }
+
+.message{
+    display: none;
+    color: yellow;
+}

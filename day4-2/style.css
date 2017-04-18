@@ -1,0 +1,41 @@
+.post{
+    background: #2196F3;
+    text-align: center;
+    color: white;
+    padding: 12px;
+    position: fixed;
+    width: 100%;
+    padding-left: 36%;
+}
+
+.parent{
+    background: #8BC34A;
+}
+
+.child{
+    background: #755dc3;
+    height: 50px;
+}
+
+.floatleft{
+    float: left;
+}
+
+.my-textarea {
+    border-radius: 6px;
+    width: 200px;
+    border-color: blanchedalmond;
+}
+
+.my-btn {
+    background: #03A9F4;
+    color: white;
+    margin-top: 5px;
+    margin-left: 6px;
+    width: 100px;
+}
+
+.my-post-parent{
+    padding-top: 60px;
+    clear: left;
+}

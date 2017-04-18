@@ -3,6 +3,8 @@
     text-align: center;
     color: white;
     padding: 12px;
+    position: fixed;
+    width: 100%;
 }
 
 .parent{
@@ -11,5 +13,5 @@
 
 .child{
     background: #755dc3;
-    height: 100px;
+    height: 150px;
 }
