@@ -1,0 +1,15 @@
+.post{
+    background: #2196F3;
+    text-align: center;
+    color: white;
+    padding: 12px;
+}
+
+.parent{
+    background: #8BC34A;
+}
+
+.child{
+    background: #755dc3;
+    height: 100px;
+}
