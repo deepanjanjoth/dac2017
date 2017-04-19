@@ -15,7 +15,7 @@ function createPost() {
     var textAreaValue = textAreaId.value;
 
     var newNode = document.createElement("div");
-    newNode.className = "child";
+    newNode.className = "abcd";
     newNode.style.backgroundColor = colorList[randomNumber];
     newNode.style.color = "white";
     newNode.style.textAlign = "center";
