@@ -71,3 +71,14 @@ function addNewImageUsingClone() {
     var maindiv = document.getElementById("sample");
     maindiv.appendChild(newCloneNode)
 }
+
+
+function addNewImageUsingClone1() {
+    var refNode = document.getElementById('refDiv');
+    var newCloneNode = refNode.cloneNode(true);
+    newCloneNode.removeAttribute("id");
+    newCloneNode.removeAttribute("style");
+
+    var maindiv = document.getElementById("parentDiv");
+    maindiv.appendChild(newCloneNode)
+}
