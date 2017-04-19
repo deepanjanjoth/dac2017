@@ -1,0 +1,77 @@
+.navmenu {
+    float: left;
+    width: 24.5%;
+    background: #2196f3;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.register {
+    clear: left;
+    /* margin: 1px; */
+    background: #2196F3;
+    width: 50%;
+    float: right;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 5px;
+}
+
+.formdiv{
+    margin: auto;
+    width: 50%;
+    margin-top: 1%;
+    color: white;
+    margin-bottom: 4%;
+    margin-top: 3%;
+}
+
+.row{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.common{
+    padding-top: 5px;
+}
+
+.btn-login {
+    background: rgba(33, 150, 243, 0.59);
+    border-radius: 4px;
+    color: whitesmoke;
+}
+
+.footer{
+    clear: both;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #2196f3;
+}
+
+.hide{
+    display: none;
+    color:red;
+}
+
+input[type='text']{
+    width: 50%;
+    height: 25px;
+    border-style: none;
+    border-radius: 4px;
+}
+
+.sample{
+    background: #2196f3;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
+.btn-div{
+    padding: 5px;
+    text-align: center;
+    color: white;
+    background: #FFC107;
+}

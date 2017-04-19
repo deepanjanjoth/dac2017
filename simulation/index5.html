@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+
+
+<div id="nav">
+    <div class="navmenu">HOME</div>
+    <div class="navmenu">GALLERY</div>
+    <div class="navmenu">ABCD</div>
+    <div class="navmenu">XYZ</div>
+</div>
+
+
+<div id="register" class="register">
+
+    <div id="formdiv" class="formdiv">
+        <form id="form1">
+            <div class="row">
+                <div class="common">
+                    Username
+                </div>
+
+                <div class="common">
+                    <input type="text" name="username">
+                    <span id="userNameValidSpan" class="hide">Username cannot be empty</span>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="common">
+                    Password
+                </div>
+
+                <div class="common">
+                    <input type="text" name="password">
+                    <span id="passwordValidSpan" class="hide">Password cannot be empty</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="common">
+                    <input type="button" value="Submit" class="btn-login" onclick="submitForm();">
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+
+<div class="footer">
+
+    <div class="calculator">
+        <div class="calculatorBoxDiv">
+            <input type="text" name="number1">
+        </div>
+
+        <div class="calculatorBoxDiv">
+            <input type="text" name="number2">
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
