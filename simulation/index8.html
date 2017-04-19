@@ -1,20 +1,36 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
 
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
+
 <body>
 
-    <div class="sample" id="sample">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-sm-offset-1 col-sm-5">
+                Hello World
+            </div>
+
+
+            <div class="col-sm-6">
+                Hello World
+            </div>
+        </div>
+
     </div>
 
-    <div class="btn-div">
-        <input type="button" value="Add" onclick="addNewImage()">
 
-        <input type="button" value="Remove" onclick="removeNode()">
-    </div>
 </body>
 </html>

@@ -5,6 +5,8 @@
 var colorList = ['red', 'green', 'blue', 'yellow', 'violet', 'brown', 'black',
 'choclate', 'coral', 'pink', 'indigo'];
 
+var textAreaId = document.getElementById("textAreaId");
+
 function createPost() {
 
     var randomNumber = Math.floor(Math.random()*11);
