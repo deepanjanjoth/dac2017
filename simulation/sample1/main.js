@@ -10,12 +10,30 @@ var contentList = ["Failure is simply the opportunity to begin again, this time 
                     "Don't find fault. Find a remedy.",
                     "When we give up on our dreams, we die while still alive."];
 
+var youtubeList = ["https://www.youtube.com/embed/G62HrubdD6o", "https://www.youtube.com/embed/mg2xtVYgQhI", "https://www.youtube.com/embed/eON7OfV2yFs"];
+
+
 function increaseCount(elemObj){
     var currentCount = elemObj.children[1].innerHTML;
     var increaseCount = Number(currentCount) + 1;
 
     elemObj.children[1].innerHTML = increaseCount;
 };
+
+
+function postContent() {
+    var refObj = document.getElementById("refIdForContent");
+
+    var newObj = refObj.cloneNode(true);
+    newObj.style.display = "block";
+    newObj.removeAttribute("id");
+
+    newObj.children[0].children[0].children[0].innerHTML = '"' + contentList[Math.floor(Math.random() * 6)] + '"';
+
+
+    var parentObj = document.getElementById("parentId");
+    parentObj.insertBefore(newObj, parentObj.firstChild);
+}
 
 
 function postImage() {
@@ -33,19 +51,21 @@ function postImage() {
 }
 
 
-
-function postContent() {
-    var refObj = document.getElementById("refIdForContent");
+function postVideo() {
+    var refObj = document.getElementById("refIdForVideo");
 
     var newObj = refObj.cloneNode(true);
     newObj.style.display = "block";
     newObj.removeAttribute("id");
 
-    newObj.children[0].children[0].children[0].innerHTML = '"' + contentList[Math.floor(Math.random() * 6)] + '"';
+    newObj.children[0].children[0].children[0].src = youtubeList[Math.floor(Math.random() * 3)];
 
 
     var parentObj = document.getElementById("parentId");
     parentObj.insertBefore(newObj, parentObj.firstChild);
 }
+
+
+
 
 

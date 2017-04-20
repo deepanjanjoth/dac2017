@@ -30,7 +30,7 @@
         <div class="col-sm-offset-3 col-sm-6">
             <button type="button" class="btn btn-info navbar-btn" onclick="postContent();">Post Content</button>
             <button type="button" class="btn btn-info navbar-btn" onclick="postImage();">Post Image</button>
-            <button type="button" class="btn btn-info navbar-btn">Post Video</button>
+            <button type="button" class="btn btn-info navbar-btn" onclick="postVideo();">Post Video</button>
         </div>
     </div>
 </nav>
@@ -76,6 +76,34 @@
         <blockquote class="my-post-content">
             <p>“Failure is simply the opportunity to begin again, this time more intelligently.”</p>
         </blockquote>
+
+        <div style="margin-top: 4px;">
+            <button class="btn btn-primary col-sm-4" onclick="increaseCount(this);">
+                <span class="glyphicon glyphicon-thumbs-up my-icon-font-size" ></span>
+                <span class="my-icon-font-size">0</span>
+            </button>
+
+            <button class="btn btn-success col-sm-4" onclick="increaseCount(this);">
+                <span class="glyphicon glyphicon-thumbs-down my-icon-font-size" ></span>
+                <span class="my-icon-font-size">0</span>
+            </button>
+
+            <button class="btn btn-danger col-sm-4" onclick="increaseCount(this);">
+                <span class="glyphicon glyphicon-heart my-icon-font-size" ></span>
+                <span class="my-icon-font-size">0</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<!--post video reference copy for the purpose of clone -->
+<div class="row"  style="display: none;" id="refIdForVideo">
+    <div class="col-sm-offset-3 col-sm-6 jumbotron" >
+
+        <div class="embed-responsive embed-responsive-4by3">
+            <iframe width="854" height="480" src="https://www.youtube.com/embed/G62HrubdD6o" frameborder="0" allowfullscreen></iframe>
+        </div>
 
         <div style="margin-top: 4px;">
             <button class="btn btn-primary col-sm-4" onclick="increaseCount(this);">
