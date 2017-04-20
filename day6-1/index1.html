@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+    <script src="jquery/jquery-3.2.1.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    <script src="main.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" style="background: #508cff;">
+
+    <div class="navbar-header">
+        <a class="navbar-brand" style=" color:white" href="#/">
+            Dacbook
+        </a>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-offset-3 col-sm-6">
+            <button type="button" class="btn btn-success navbar-btn">Post Content</button>
+            <button type="button" class="btn btn-success navbar-btn" onclick="postImage();">Post Image</button>
+            <button type="button" class="btn btn-success navbar-btn">Post Video</button>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container" id="parentId">
+
+
+</div>
+
+
+
+<!--reference copy for the purpose of clone-->
+<div class="row" style="display: none" id="refIdForImage">
+    <div class="col-sm-offset-3 col-sm-6" >
+        <img src="nodejs-vs-java.png" class="img-responsive img-rounded" >
+
+        <div style="margin-top: 4px;">
+            <button class="btn btn-primary col-sm-3" onclick="increaseCount(this);">
+                <span class="glyphicon glyphicon-thumbs-up my-icon-font-size" ></span>
+                <span class="my-icon-font-size">0</span>
+            </button>
+
+            <button class="btn btn-success col-sm-3" onclick="increaseCount(this);">
+                <span class="glyphicon glyphicon-thumbs-down my-icon-font-size" ></span>
+                <span class="my-icon-font-size">0</span>
+            </button>
+
+            <button class="btn btn-danger col-sm-3" onclick="increaseCount(this);">
+                <span class="glyphicon glyphicon-heart my-icon-font-size" ></span>
+                <span class="my-icon-font-size">0</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
