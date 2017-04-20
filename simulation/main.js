@@ -80,5 +80,6 @@ function addNewImageUsingClone1() {
     newCloneNode.removeAttribute("style");
 
     var maindiv = document.getElementById("parentDiv");
-    maindiv.appendChild(newCloneNode)
+    // maindiv.appendChild(newCloneNode)
+    maindiv.insertBefore(newCloneNode, maindiv.firstChild);
 }

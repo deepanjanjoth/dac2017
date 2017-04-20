@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="main.js"></script>
+    <style>
+        body { padding-top: 70px; }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar  navbar-fixed-top" style="background-color: #3F51B5;">
+        <div class="container-fluid">
+
+            <form class="navbar-form " role="search" style="margin-left: 40%">
+                <div class="form-group">
+                    <input type="text" class="form-control col-sm-6 input-lg" placeholder="Hie Create Post">
+                </div>
+                <button type="button" class="btn btn-default" onclick="addNewImageUsingClone1()">POST</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="container">
+
+        <div class="row" style="margin-top:5px">
+            <div class="col-sm-offset-3 col-sm-6" id="parentDiv">
+
+                <div class="row jumbotron">
+                    <div class="col-sm-offset-3 col-sm-6 ">
+                        <img src="positive1.jpg" class="img-responsive">
+                    </div>
+                </div>
+
+                <div class="row jumbotron">
+                    <div class="col-sm-offset-2 col-sm-8 text-info" >
+                        <blockquote>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."
+                        </blockquote>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row jumbotron" id="refDiv" style="display: none">
+        <div class="col-sm-offset-3 col-sm-6 ">
+            <img src="positive1.jpg" class="img-responsive">
+        </div>
+    </div>
+</body>
+</html>
