@@ -29,6 +29,10 @@ function postContent() {
     refObj.children().children().first().html(contentList[Math.floor(Math.random() * 6)]);
 
     $("#parentId").prepend(refObj);
+
+    $("#toast").fadeIn(1000, function(){
+        $(this).fadeOut(5000);
+    });
 }
 
 
