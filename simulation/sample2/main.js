@@ -33,32 +33,24 @@ function postContent() {
 
 
 function postImage() {
-    var refImgObj = document.getElementById("refIdForImage");
+    var refObj = $("#refIdForImage").clone(true);
+    refObj.removeAttr("id");
+    refObj.css("display","block");
 
-    var newImgObj = refImgObj.cloneNode(true);
-    newImgObj.style.display = "block";
-    newImgObj.removeAttribute("id");
+    refObj.children().children().first().prop("src", imageList[Math.floor(Math.random() * 4)]);
 
-    newImgObj.children[0].children[0].src = imageList[Math.floor(Math.random() * 4)];
-
-
-    var parentObj = document.getElementById("parentId");
-    parentObj.insertBefore(newImgObj, parentObj.firstChild);
+    $("#parentId").prepend(refObj);
 }
 
 
 function postVideo() {
-    var refObj = document.getElementById("refIdForVideo");
+    var refObj = $("#refIdForVideo").clone(true);
+    refObj.removeAttr("id");
+    refObj.css("display","block");
 
-    var newObj = refObj.cloneNode(true);
-    newObj.style.display = "block";
-    newObj.removeAttribute("id");
+    refObj.children().children().children().first().prop("src", youtubeList[Math.floor(Math.random() * 3)]);
 
-    newObj.children[0].children[0].children[0].src = youtubeList[Math.floor(Math.random() * 3)];
-
-
-    var parentObj = document.getElementById("parentId");
-    parentObj.insertBefore(newObj, parentObj.firstChild);
+    $("#parentId").prepend(refObj);
 }
 
 
