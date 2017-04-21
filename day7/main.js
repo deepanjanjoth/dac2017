@@ -43,6 +43,16 @@ function postImage() {
 }
 
 
+function postImageUsingJQuery() {
+    var newobj = $("#refIdForImage").clone(true).css("display", "block").removeAttr("id");
+
+    var dynamicImage = imageList[Math.floor(Math.random() * 4)];
+    newobj.children().children().first().attr("src", dynamicImage);
+
+    $("#parentId").prepend(newobj);
+}
+
+
 
 function postContent() {
     var refObj = document.getElementById("refIdForContent");
@@ -56,6 +66,22 @@ function postContent() {
 
     var parentObj = document.getElementById("parentId");
     parentObj.insertBefore(newObj, parentObj.firstChild);
+}
+
+function postContentUsingQuery() {
+    var newObj = $("#refIdForContent").clone(true).css("display", "block").removeAttr("id");
+
+    var dynamicContent = '"' + contentList[Math.floor(Math.random() * 6)] + '"';
+    newObj.children().children().first().html(dynamicContent);
+
+    $("#parentId").prepend(newObj);
+}
+
+
+
+function postVideoUsingJQuery(){
+    var newObj = $("#refIdForVideo").clone(true).css("display", "block").removeAttr("id");
+    $("#parentId").prepend(newObj);
 }
 
 

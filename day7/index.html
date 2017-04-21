@@ -28,9 +28,9 @@
 
     <div class="row">
         <div class="col-sm-offset-3 col-sm-6">
-            <button type="button" class="btn btn-info navbar-btn" onclick="postContent();">Post Content</button>
-            <button type="button" class="btn btn-info navbar-btn" onclick="postImage();">Post Image</button>
-            <button type="button" class="btn btn-info navbar-btn">Post Video</button>
+            <button type="button" class="btn btn-info navbar-btn" onclick="postContentUsingQuery();">Post Content</button>
+            <button type="button" class="btn btn-info navbar-btn" onclick="postImageUsingJQuery();">Post Image</button>
+            <button type="button" class="btn btn-info navbar-btn" onclick="postVideoUsingJQuery();">Post Video</button>
         </div>
     </div>
 </nav>
@@ -93,8 +93,39 @@
                 <span class="my-icon-font-size">0</span>
             </button>
         </div>
+
+
     </div>
 </div>
 
+
+<!--reference for the video -->
+<div class="row"  style="display: none;" id="refIdForVideo">
+    <div class="col-sm-offset-3 col-sm-6 jumbotron" >
+
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/G62HrubdD6o" frameborder="0" allowfullscreen>
+
+            </iframe>
+        </div>
+
+        <div style="margin-top: 4px;">
+            <button class="btn btn-primary col-sm-4" onclick="increaseCountUsingJQuery(this);">
+                <span class="glyphicon glyphicon-thumbs-up my-icon-font-size" ></span>
+                <span class="my-icon-font-size">0</span>
+            </button>
+
+            <button class="btn btn-success col-sm-4" onclick="increaseCountUsingJQuery(this);">
+                <span class="glyphicon glyphicon-thumbs-down my-icon-font-size" ></span>
+                <span class="my-icon-font-size">0</span>
+            </button>
+
+            <button class="btn btn-danger col-sm-4" onclick="increaseCountUsingJQuery(this);">
+                <span class="glyphicon glyphicon-heart my-icon-font-size" ></span>
+                <span class="my-icon-font-size">0</span>
+            </button>
+        </div>
+    </div>
+</div>
 </body>
 </html>
