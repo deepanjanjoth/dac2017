@@ -22,17 +22,13 @@ function increaseCount(elemObj){
 
 
 function postContent() {
-    var refObj = document.getElementById("refIdForContent");
+    var refObj = $("#refIdForContent").clone(true);
+    refObj.removeAttr("id");
+    refObj.css("display","block");
 
-    var newObj = refObj.cloneNode(true);
-    newObj.style.display = "block";
-    newObj.removeAttribute("id");
+    // newObj.children[0].children[0].children[0].innerHTML = '"' + contentList[Math.floor(Math.random() * 6)] + '"';
 
-    newObj.children[0].children[0].children[0].innerHTML = '"' + contentList[Math.floor(Math.random() * 6)] + '"';
-
-
-    var parentObj = document.getElementById("parentId");
-    parentObj.insertBefore(newObj, parentObj.firstChild);
+    $("#parentId").append(refObj);
 }
 
 
