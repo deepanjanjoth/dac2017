@@ -26,9 +26,9 @@ function postContent() {
     refObj.removeAttr("id");
     refObj.css("display","block");
 
-    // newObj.children[0].children[0].children[0].innerHTML = '"' + contentList[Math.floor(Math.random() * 6)] + '"';
+    refObj.children().children().first().html(contentList[Math.floor(Math.random() * 6)]);
 
-    $("#parentId").append(refObj);
+    $("#parentId").prepend(refObj);
 }
 
 
