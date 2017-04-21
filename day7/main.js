@@ -10,11 +10,21 @@ var contentList = ["Failure is simply the opportunity to begin again, this time 
                     "Don't find fault. Find a remedy.",
                     "When we give up on our dreams, we die while still alive."];
 
+
 function increaseCount(elemObj){
     var currentCount = elemObj.children[1].innerHTML;
     var increaseCount = Number(currentCount) + 1;
 
     elemObj.children[1].innerHTML = increaseCount;
+};
+
+
+function increaseCountUsingJQuery(elemObj){
+
+    var currentCount = $(elemObj).children().last().html();
+    var increaseCount = Number(currentCount) + 1;
+
+    $(elemObj).children().last().html(increaseCount);
 };
 
 
