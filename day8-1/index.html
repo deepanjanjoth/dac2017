@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+    <script src="jquery/jquery-3.2.1.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    <script src="main.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" style="background: #508cff;">
+
+    <div class="navbar-header">
+        <a class="navbar-brand my-brand" style=" color:white" href="#/">
+            Dacbook
+        </a>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-offset-3 col-sm-6">
+            <button type="button" class="btn btn-info navbar-btn" onclick="postContentUsingQuery();">Post Content</button>
+            <button type="button" class="btn btn-info navbar-btn" onclick="postImageUsingJQuery();">Post Image</button>
+            <button type="button" class="btn btn-info navbar-btn" onclick="postVideoUsingJQuery();">Post Video</button>
+        </div>
+    </div>
+</nav>
+
+<!--FOR TOAST/NOTIFICATION -->
+<div class="container-fluid navbar-fixed-top" style="display: none; pointer-events: none" id="notificationId">
+    <div class="row">
+        <div class="col-sm-offset-9 col-sm-3">
+            <div class="alert alert-success" role="alert">
+                Hello Notification!!!
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--PARENT CONTAINER -->
+<div class="container" id="parentId" style="margin-top: 65px">
+
+
+
+</div>
+
+
+
+<!--post image reference copy for the purpose of clone-->
+<div class="row" style="display: none;" id="refIdForImage">
+    <div class="col-sm-offset-3 col-sm-6 jumbotron" >
+        <img src="img/nodejs-vs-java.png" class="img-responsive img-rounded" >
+
+        <div style="margin-top: 4px;">
+            <button class="btn btn-primary col-sm-3" onclick="increaseCountUsingJQuery(this);">
+                <span class="glyphicon glyphicon-thumbs-up my-icon-font-size" ></span>
+                <span class="my-icon-font-size">0</span>
+            </button>
+
+            <button class="btn btn-success col-sm-3" onclick="increaseCountUsingJQuery(this);">
+                <span class="glyphicon glyphicon-thumbs-down my-icon-font-size" ></span>
+                <span class="my-icon-font-size">0</span>
+            </button>
+
+            <button class="btn btn-danger col-sm-3" onclick="increaseCountUsingJQuery(this);">
+                <span class="glyphicon glyphicon-heart my-icon-font-size" ></span>
+                <span class="my-icon-font-size">0</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<!--post content reference copy for the purpose of clone -->
+<div class="row" style="display: none;" id="refIdForContent">
+    <div class="col-sm-offset-3 col-sm-6 jumbotron" >
+
+        <blockquote class="my-post-content">
+            <p>“Failure is simply the opportunity to begin again, this time more intelligently.”</p>
+        </blockquote>
+
+        <div style="margin-top: 4px;">
+            <button class="btn btn-primary col-sm-4" onclick="increaseCountUsingJQuery(this);">
+                <span class="glyphicon glyphicon-thumbs-up my-icon-font-size" ></span>
+                <span class="my-icon-font-size">0</span>
+            </button>
+
+            <button class="btn btn-success col-sm-4" onclick="increaseCountUsingJQuery(this);">
+                <span class="glyphicon glyphicon-thumbs-down my-icon-font-size" ></span>
+                <span class="my-icon-font-size">0</span>
+            </button>
+
+            <button class="btn btn-danger col-sm-4" onclick="increaseCountUsingJQuery(this);">
+                <span class="glyphicon glyphicon-heart my-icon-font-size" ></span>
+                <span class="my-icon-font-size">0</span>
+            </button>
+        </div>
+
+
+    </div>
+</div>
+
+
+<!--reference for the video -->
+<div class="row"  style="display: none;" id="refIdForVideo">
+    <div class="col-sm-offset-3 col-sm-6 jumbotron" >
+
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/G62HrubdD6o" frameborder="0" allowfullscreen>
+
+            </iframe>
+        </div>
+
+        <div style="margin-top: 4px;">
+            <button class="btn btn-primary col-sm-4" onclick="increaseCountUsingJQuery(this);">
+                <span class="glyphicon glyphicon-thumbs-up my-icon-font-size" ></span>
+                <span class="my-icon-font-size">0</span>
+            </button>
+
+            <button class="btn btn-success col-sm-4" onclick="increaseCountUsingJQuery(this);">
+                <span class="glyphicon glyphicon-thumbs-down my-icon-font-size" ></span>
+                <span class="my-icon-font-size">0</span>
+            </button>
+
+            <button class="btn btn-danger col-sm-4" onclick="increaseCountUsingJQuery(this);">
+                <span class="glyphicon glyphicon-heart my-icon-font-size" ></span>
+                <span class="my-icon-font-size">0</span>
+            </button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
