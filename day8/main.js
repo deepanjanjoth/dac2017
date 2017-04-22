@@ -99,4 +99,20 @@ function postVideoUsingJQuery(){
     });
 }
 
+function postComment(elemObj) {
+    var comment= $(elemObj).prev().val();
+
+    var parentCommentObj= $(elemObj).parent().prev().children().first();
+
+    var newItem= "<li class='list-group-item'>"+ comment+ "</li>";
+    parentCommentObj.prepend(newItem);
+
+    // clear the text area
+    $(elemObj).prev().val("");
+}
+
+function toggleComment(elemObj)
+{
+    $(elemObj).parent().next().toggle();
+}
 
