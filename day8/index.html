@@ -50,7 +50,56 @@
 <!--PARENT CONTAINER -->
 <div class="container" id="parentId" style="margin-top: 65px">
 
+    <div class="row">
+        <div class="col-sm-offset-3 col-sm-6 jumbotron" >
 
+            <blockquote class="my-post-content">
+                <p>“Failure is simply the opportunity to begin again, this time more intelligently.”</p>
+            </blockquote>
+
+            <!-- block for buttons -->
+            <div style="margin-top: 4px;">
+                <button class="btn btn-primary col-sm-3" onclick="increaseCountUsingJQuery(this);">
+                    <span class="glyphicon glyphicon-thumbs-up my-icon-font-size" ></span>
+                    <span class="my-icon-font-size">0</span>
+                </button>
+
+                <button class="btn btn-success col-sm-3" onclick="increaseCountUsingJQuery(this);">
+                    <span class="glyphicon glyphicon-thumbs-down my-icon-font-size" ></span>
+                    <span class="my-icon-font-size">0</span>
+                </button>
+
+                <button class="btn btn-danger col-sm-3" onclick="increaseCountUsingJQuery(this);">
+                    <span class="glyphicon glyphicon-heart my-icon-font-size" ></span>
+                    <span class="my-icon-font-size">0</span>
+                </button>
+
+                <button class="btn btn-warning col-sm-3" onclick="">
+                    <span class="glyphicon glyphicon-comment my-icon-font-size" ></span>
+                    <span class="my-icon-font-size">0</span>
+                </button>
+            </div>
+
+            <!-- block for comment -->
+            <div>
+                <div class="col-sm-12" style="margin-top: 5px;">
+                    <ul class="list-group">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-12">
+                    <textarea class="form-control" rows="2"></textarea>
+
+                    <button class="btn btn-primary col-sm-3" >
+                        COMMENT
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 </div>
 
