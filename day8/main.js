@@ -50,6 +50,11 @@ function postImageUsingJQuery() {
     newobj.children().children().first().attr("src", dynamicImage);
 
     $("#parentId").prepend(newobj);
+
+    // some logic to display notification
+    $("#notificationId").fadeIn(2000, function(){
+        $("#notificationId").fadeOut(5000);
+    });
 }
 
 
@@ -75,6 +80,11 @@ function postContentUsingQuery() {
     newObj.children().children().first().html(dynamicContent);
 
     $("#parentId").prepend(newObj);
+
+    // some logic to display notification
+    $("#notificationId").fadeIn(2000, function(){
+        $("#notificationId").fadeOut(5000);
+    });
 }
 
 
@@ -82,6 +92,11 @@ function postContentUsingQuery() {
 function postVideoUsingJQuery(){
     var newObj = $("#refIdForVideo").clone(true).css("display", "block").removeAttr("id");
     $("#parentId").prepend(newObj);
+
+    // some logic to display notification
+    $("#notificationId").fadeIn(2000, function(){
+        $("#notificationId").fadeOut(5000);
+    });
 }
 
 
