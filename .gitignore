@@ -1,0 +1,9 @@
+workspace.xml
+bower_components
+bootstrap-3.3.7-dist
+day5/bootstrap-3.3.7-dist
+day6/bootstrap-3.3.7-dist/*
+day6-1/bootstrap-3.3.7-dist/*
+day7/bootstrap-3.3.7-dist/*
+day8/bootstrap-3.3.7-dist/*
+day8-1/bootstrap-3.3.7-dist/*
