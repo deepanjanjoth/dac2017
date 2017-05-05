@@ -1,0 +1,38 @@
+1. jQuery method revision.
+    parent()
+    children()
+    prev()
+    next()
+    first()
+    last()
+
+    html()
+    val()
+
+    css()
+
+    append()
+    prepend()
+
+    clone()
+
+    show()
+    hide()
+    fadeIn()
+    fadeOut()
+    toggle()
+
+    attr()
+    removeAttr()
+
+2. Create Basic Notification.
+   Make Notification Content Dynamic.
+   Stack your notification.
+
+
+3. Apply Comment, at Content/Image/Video.
+   An option to remove comment.
+   An option to like/dislike comment.
+   On New Dynamic block, hide comment section.
+
+

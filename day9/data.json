@@ -1,0 +1,11 @@
+{
+  "prop1" : "CDAC",
+  "prop2" : true,
+  "prop3" : 1234,
+
+  "prop4" : [1, "KHG", true, {}],
+
+  "prop5" : {
+    "prop1" : "afdaf"
+  }
+}

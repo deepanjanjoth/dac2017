@@ -1,0 +1,21 @@
+.my-icon-font-size {
+    font-size: 25px;
+}
+
+.my-margin-at-top{
+    margin-top: 10px;
+}
+
+.my-post-content {
+    border-left: 5px solid #FF9800;
+    font-style: italic;
+    text-shadow: 0 0 10px #795548;
+}
+
+.my-brand {
+    color: white;
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: x-large;
+    text-shadow: 0 0 10px #CDDC39;
+}
