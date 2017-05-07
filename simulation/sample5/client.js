@@ -47,5 +47,18 @@ function postContentUsingQueryAjaxOnLoad(resObj) {
 
 
 
-// initiate ajax call;
-ajaxTest();
+/** Weather app **/
+function weatherApp() {
+    // var url = "http://api.openweathermap.org/data/2.5/weather";
+    var url = "http://api.openweathermap.org/data/2.5/forecast";
+    var data = {"q":"mumbai", "appid":"7023923dd26a725da995c75b65864de5"};
+
+    var jqxhr = $.get(url, data);
+
+    jqxhr.done(function(resonseData){
+        console.log(resonseData);
+    });
+
+};
+
+weatherApp();
