@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+    <script src="jquery/jquery-3.2.1.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+
+    <script src="client.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="background: #286090;">
+
+        <div class="navbar-header">
+            <a class="navbar-brand my-brand" style=" color:white" href="#/">
+            Weather App
+        </a>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-offset-1 col-sm-6">
+                <input type="text" id="searchbox" class="searchbox form-control" placeholder="Text input">
+
+            </div>
+            <div class="col-sm-2">
+                <input class="searchbox btn btn-default" type="button" onclick="ajaxCall();" value="Search">
+
+            </div>
+        </div>
+
+    </nav>
+
+
+
+    <!--PARENT CONTAINER -->
+    <div class="container" id="parentId" style="margin-top: 65px">
+
+
+
+    </div>
+
+    <div class="row" id="templateId" style="display:none">
+
+        <div class="col-sm-offset-3 col-sm-6 jumbotron">
+            <div class="row">
+                <!-- first row -->
+                <div class="col-sm-3">
+                    <input class="btn btn-primary mybutton" type="button" value="City">
+
+                </div>
+                <div class="col-sm-offset-6 col-sm-3">
+                    <input class="btn btn-primary mybutton" type="button" value="Temprature">
+
+                </div>
+            </div>
+            <div class="row">
+                <!-- second row -->
+                <div class="col-sm-offset-3 col-sm-6">
+                    <span class="glyphicon glyphicon-cloud myicon"> </span>
+                </div>
+
+            </div>
+            <div class="row">
+                <!-- third row -->
+                <div class="col-sm-3">
+                    <input class="btn btn-primary mybutton" type="button" value="Date">
+
+                </div>
+                <div class="col-sm-offset-6 col-sm-3">
+                    <input class="btn btn-primary mybutton" type="button" value="Description">
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
